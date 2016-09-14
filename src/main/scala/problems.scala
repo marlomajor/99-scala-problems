@@ -24,4 +24,7 @@ object Problem {
     case (a, _ :: tail) => kthRecursion(a-1, tail)
     case (a, Nil)       => throw new NoSuchElementException
   }
+
+  def length[A](ls:List[A]):Int = ls.length
+
 }

@@ -24,4 +24,8 @@ class ProblemTest extends FunSuite with Matchers {
   test("find kth element with recursion") {
     Problem.kthRecursion(4, List(1,3,4,6,7,9)) should be (7)
   }
+
+  test("find number of elements in list") {
+    Problem.length(List(1,2,3,4,5,7)) should be (6)
+  }
 }

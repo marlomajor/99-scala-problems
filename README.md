@@ -1,1 +1,2 @@
-This is a program designed based on the 99 Scala Problems by Werner Hett at Berne University
+This is based on the 99 Scala Problems by Werner Hett.
+[99 Scala Problems](http://aperiodic.net/phil/scala/s-99/)
