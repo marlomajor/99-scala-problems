@@ -15,9 +15,8 @@ object Problem {
     case Nil           => throw new NoSuchElementException
   }
 
-  def kth[A](n:Int, ls:List[A]):A = {
+  def kth[A](n:Int, ls:List[A]):A =
     if (n>=0) ls(n) else throw new IllegalArgumentException
-  }
 
   def kthRecursion[A](n:Int, ls:List[A]):A = (n, ls) match {
     case (0, h :: _)    => h
@@ -33,9 +32,8 @@ object Problem {
     case (Nil, a)     => throw new NoSuchElementException
   }
 
-  def lengthFunctional[A](ls:List[A]):Int = {
+  def lengthFunctional[A](ls:List[A]):Int =
     ls.foldLeft(0)((c, _) => c + 1)
-  }
 
   def reverse[A](ls:List[A]):List[A] = ls.reverse
 
@@ -47,11 +45,13 @@ object Problem {
     reverseR(Nil, ls)
   }
 
-  def reverseFunctional[A](ls:List[A]):List[A] = {
+  def reverseFunctional[A](ls:List[A]):List[A] =
     ls.foldLeft(List[A]())((r,h) => h::r)
+
+  def palindrome[A](ls:List[A]):Boolean = ls.reverse == ls
+
+  def flatten[A](ls:List[A]):List[Int] = {
+    ls.toString.filter(_.isDigit).split("").toList.map{_.toInt}
   }
 
-  def palindrome[A](ls:List[A]):Boolean = {
-    ls.reverse == ls
-  }
 }

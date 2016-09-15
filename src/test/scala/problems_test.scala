@@ -52,4 +52,14 @@ class ProblemTest extends FunSuite with Matchers {
   test("list is a palindrome") {
     Problem.palindrome(List(1,2,3,2,1)) should be (true)
   }
+
+  test("flatten list") {
+    Problem.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) should be
+      (List(1, 1, 2, 3, 5, 8))
+  }
+
+  test("eliminate consecutive duplicates of list elements") {
+    pending
+    Problem.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should be List('a, 'b, 'c, 'a, 'd, 'e)
+  }
 }
