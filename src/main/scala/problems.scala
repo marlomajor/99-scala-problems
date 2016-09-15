@@ -45,13 +45,31 @@ object Problem {
     reverseR(Nil, ls)
   }
 
-  def reverseFunctional[A](ls:List[A]):List[A] =
-    ls.foldLeft(List[A]())((r,h) => h::r)
+  def reverseFunctional[A](ls:List[A]):List[A] = {
+    ls.foldLeft(List.empty[A])((acc,h) => h::acc)
+  }
 
-  def palindrome[A](ls:List[A]):Boolean = ls.reverse == ls
+/* Example of foldLeft
 
-  def flatten[A](ls:List[A]):List[Int] = {
-    ls.toString.filter(_.isDigit).split("").toList.map{_.toInt}
+List(1,2,3,4,5,6).foldLeft(0){case(acc, x) => acc + 1}
+acc   : 0, 1, 2, 3, 4, 5,
+x     : 1, 2, 3, 4, 5, 6,
+newAcc: 1, 2, 3, 4, 5, 6
+
+f(f(f(f(f(f(0, 1), 2), 3), 4), 5), 6)
+f(f(f(f(f(1, 2), 3), 4), 5), 6)
+f(f(f(f(2, 3), 4), 5), 6)
+f(f(f(3, 4), 5), 6)
+f(f(4, 5), 6)
+f(5, 6)
+6
+
+*/
+  def palindrome(ls:List[_]):Boolean = ls.reverse == ls
+
+  def flatten(ls:List[_]):List[Any] = ls flatMap {
+    case m:List[_] => flatten(m)
+    case n         => List(n)
   }
 
 }

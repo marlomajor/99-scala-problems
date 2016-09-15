@@ -8,9 +8,9 @@
                                                  
                                                </testcase><testcase classname="ProblemTest" name="find last element of list with recursion" time="0.0">
                                                  
-                                               </testcase><testcase classname="ProblemTest" name="find last but one element" time="0.0">
+                                               </testcase><testcase classname="ProblemTest" name="find last but one element" time="0.001">
                                                  
-                                               </testcase><testcase classname="ProblemTest" name="find last but one element with recursion" time="0.002">
+                                               </testcase><testcase classname="ProblemTest" name="find last but one element with recursion" time="0.0">
                                                  
                                                </testcase><testcase classname="ProblemTest" name="find kth element" time="0.0">
                                                  
@@ -20,7 +20,7 @@
                                                  
                                                </testcase><testcase classname="ProblemTest" name="find number of elements with recursion" time="0.0">
                                                  
-                                               </testcase><testcase classname="ProblemTest" name="find number of elements purely functionally" time="0.0">
+                                               </testcase><testcase classname="ProblemTest" name="find number of elements purely functionally" time="0.001">
                                                  
                                                </testcase><testcase classname="ProblemTest" name="reverse list" time="0.0">
                                                  
