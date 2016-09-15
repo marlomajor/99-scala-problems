@@ -15,7 +15,7 @@ object Problem {
     case Nil           => throw new NoSuchElementException
   }
 
-  def kthElement[A](n:Int, ls:List[A]):A = {
+  def kth[A](n:Int, ls:List[A]):A = {
     if (n>=0) ls(n) else throw new IllegalArgumentException
   }
 
@@ -27,4 +27,19 @@ object Problem {
 
   def length[A](ls:List[A]):Int = ls.length
 
+  def lengthRecursion[A](ls:List[A], count:Int = 0):Int = (ls, count) match {
+    case (h::Nil, a)  => a+1
+    case (_::tail, a) => lengthRecursion(tail, a+1)
+    case (Nil, a)     => throw new NoSuchElementException
+  }
+
+  def reverse[A](ls:List[A]):List[A] = ls.reverse
+
+  def reverseRecursion[A](ls: List[A]): List[A] = {
+    def reverseR(result: List[A], curList: List[A]): List[A] = curList match {
+      case Nil       => result
+      case h :: tail => reverseR(h :: result, tail)
+    }
+    reverseR(Nil, ls)
+  }
 }
