@@ -40,4 +40,8 @@ class ProblemTest extends FunSuite with Matchers {
   test("reverse list with recursion"){
     Problem.reverseRecursion(List(1,2,3,4,5)) should be (List(5,4,3,2,1))
   }
+
+  test("reverse list functionally") {
+    Problem.reverseFunctional(List(1,2,3,4)) should be (List(4,3,2,1))
+  }
 }

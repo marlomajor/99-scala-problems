@@ -42,4 +42,8 @@ object Problem {
     }
     reverseR(Nil, ls)
   }
+
+  def reverseFunctional[A](ls:List[A]):List[A] = {
+    ls.foldLeft(List[A]())((r,h) => h::r)
+  }
 }
