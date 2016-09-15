@@ -33,6 +33,10 @@ class ProblemTest extends FunSuite with Matchers {
     Problem.lengthRecursion(List(1,1,2,3,3,4)) should be (6)
   }
 
+  test("find number of elements purely functionally") {
+    Problem.lengthFunctional(List(1,1,2,3,4)) should be (5)
+  }
+
   test("reverse list") {
     Problem.reverse(List(1,2,3,4,5)) should be (List(5,4,3,2,1))
   }

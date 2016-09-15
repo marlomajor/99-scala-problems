@@ -33,6 +33,10 @@ object Problem {
     case (Nil, a)     => throw new NoSuchElementException
   }
 
+  def lengthFunctional[A](ls:List[A]):Int = {
+    ls.foldLeft(0)((c, _) => c + 1)
+  }
+
   def reverse[A](ls:List[A]):List[A] = ls.reverse
 
   def reverseRecursion[A](ls: List[A]): List[A] = {
