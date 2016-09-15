@@ -50,4 +50,8 @@ object Problem {
   def reverseFunctional[A](ls:List[A]):List[A] = {
     ls.foldLeft(List[A]())((r,h) => h::r)
   }
+
+  def palindrome[A](ls:List[A]):Boolean = {
+    ls.reverse == ls
+  }
 }
