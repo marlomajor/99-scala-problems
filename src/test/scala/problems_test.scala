@@ -58,8 +58,7 @@ class ProblemTest extends FunSuite with Matchers {
       (List(1, 1, 2, 3, 5, 8))
   }
 
-  // test("eliminate consecutive duplicates of list elements") {
-  //   pending
-  //   Problem.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should be List('a, 'b, 'c, 'a, 'd, 'e)
-  // }
+  test("eliminate consecutive duplicates of list elements") {
+    Problem.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should be (List('a, 'b, 'c, 'a, 'd, 'e))
+  }
 }

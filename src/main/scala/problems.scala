@@ -49,27 +49,65 @@ object Problem {
     ls.foldLeft(List.empty[A])((acc,h) => h::acc)
   }
 
-/* Example of foldLeft
-
-List(1,2,3,4,5,6).foldLeft(0){case(acc, x) => acc + 1}
-acc   : 0, 1, 2, 3, 4, 5,
-x     : 1, 2, 3, 4, 5, 6,
-newAcc: 1, 2, 3, 4, 5, 6
-
-f(f(f(f(f(f(0, 1), 2), 3), 4), 5), 6)
-f(f(f(f(f(1, 2), 3), 4), 5), 6)
-f(f(f(f(2, 3), 4), 5), 6)
-f(f(f(3, 4), 5), 6)
-f(f(4, 5), 6)
-f(5, 6)
-6
-
-*/
   def palindrome(ls:List[_]):Boolean = ls.reverse == ls
 
   def flatten(ls:List[_]):List[Any] = ls flatMap {
     case m:List[_] => flatten(m)
     case n         => List(n)
   }
+
+  def compress[M](ls:List[M]):List[M] = {
+    ls.foldLeft(List.empty[M]){
+      case (List(), y) => List(y)
+      case (ls, y) => if (ls.last == y) ls else ls:::List(y)
+    }
+  }
+    /* Example of foldLeft
+
+
+    list.foldLeft(List.empty[A])((acc,x) => if (acc != List(x)) List(x)::acc else Nil)
+
+    List(1,2,3,4,5,6).foldLeft(0){
+    case(acc, x) => acc + 1}
+
+
+    List(1,1,2,3,3,4,5,4,4,6,7).foldLeft(List.empty[A]){
+    case (acc, x) if (acc eq List[m]) => acc::List();case i if (acc) => acc::m  }
+
+    List(1,1,2,3,3,4,5,4,4,6,7).foldLeft(List.empty[A]){
+    case (acc, m) if (acc eq List[m]) => acc::List()
+    case (acc, m) if (acc != List[m]) => acc::m
+  }
+
+  List(1,1,2,3,3,4,5,4,4,6,7).foldLeft(List.empty[A]){case (acc, m) if (acc eq List(m)) => acc::List(); case (acc, m) if (acc != List(m)) => acc:: List(m)}
+
+  acc   : 0, 1, 2, 3, 4, 5,
+  x     : 1, 2, 3, 4, 5, 6,
+  newAcc: 1, 2, 3, 4, 5, 6
+
+  f( f( f( f( f( f(0, 1), 2), 3), 4), 5), 6)
+  f(f(f(f(f(1, 2), 3), 4), 5), 6)
+  f(f(f(f(2, 3), 4), 5), 6)
+  f(f(f(3, 4), 5), 6)
+  f(f(4, 5), 6)
+  f(5, 6)
+  6
+
+  list.foldLeft(List.empty[A])(case (acc,x) if (acc != List(x)) => List(x)::acc)
+
+  def compress[A](ls:List[A]):List[A] = ls match {
+  case i
+}
+
+
+def compress[A](ls:List[A]):A = ls match {
+case j if (j == h) => compress(j)
+case h => h
+}
+
+
+
+*/
+
 
 }
