@@ -1,14 +1,10 @@
 [0m[[0minfo[0m] [0m[32mProblemTest:[0m[0m
-[0m[[0minfo[0m] [0m[32m- find last element of list[0m[0m
 [0m[[0minfo[0m] [0m[32m- find last element of list with recursion[0m[0m
-[0m[[0minfo[0m] [0m[32m- find last but one element[0m[0m
 [0m[[0minfo[0m] [0m[32m- find last but one element with recursion[0m[0m
 [0m[[0minfo[0m] [0m[32m- find kth element[0m[0m
 [0m[[0minfo[0m] [0m[32m- find kth element with recursion[0m[0m
-[0m[[0minfo[0m] [0m[32m- find number of elements[0m[0m
 [0m[[0minfo[0m] [0m[32m- find number of elements with recursion[0m[0m
 [0m[[0minfo[0m] [0m[32m- find number of elements purely functionally[0m[0m
-[0m[[0minfo[0m] [0m[32m- reverse list[0m[0m
 [0m[[0minfo[0m] [0m[32m- reverse list with recursion[0m[0m
 [0m[[0minfo[0m] [0m[32m- reverse list functionally[0m[0m
 [0m[[0minfo[0m] [0m[32m- list is a palindrome[0m[0m

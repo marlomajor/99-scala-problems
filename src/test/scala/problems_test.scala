@@ -1,16 +1,9 @@
 import org.scalatest.{Matchers, FunSuite}
 
 class ProblemTest extends FunSuite with Matchers {
-  test("find last element of list") {
-    Problem.last(List(1,3,4,5,6,7)) should be (7)
-  }
 
   test("find last element of list with recursion") {
     Problem.lastRecursion(List(1,2,3)) should be (3)
-  }
-
-  test("find last but one element") {
-    Problem.secondToLast(List(1,2,3,4,5)) should be (4)
   }
 
   test("find last but one element with recursion") {
@@ -25,20 +18,12 @@ class ProblemTest extends FunSuite with Matchers {
     Problem.kthRecursion(4, List(1,3,4,6,7,9)) should be (7)
   }
 
-  test("find number of elements") {
-    Problem.length(List(1,2,3,4,5,7)) should be (6)
-  }
-
   test("find number of elements with recursion") {
     Problem.lengthRecursion(List(1,1,2,3,3,4)) should be (6)
   }
 
   test("find number of elements purely functionally") {
     Problem.lengthFunctional(List(1,1,2,3,4)) should be (5)
-  }
-
-  test("reverse list") {
-    Problem.reverse(List(1,2,3,4,5)) should be (List(5,4,3,2,1))
   }
 
   test("reverse list with recursion"){
@@ -63,8 +48,8 @@ class ProblemTest extends FunSuite with Matchers {
       (List('a, 'b, 'c, 'a, 'd, 'e))
   }
 
-  test("Pack consecutive duplicates of list elements into sublists") {
-    Problem.pack(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should be
-      (List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), List('a, 'a), List('d), List('e, 'e, 'e, 'e)))
-  }
+  // test("Pack consecutive duplicates of list elements into sublists") {
+  //   Problem.pack(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should be
+  //     (List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), List('a, 'a), List('d), List('e, 'e, 'e, 'e)))
+  // }
 }
