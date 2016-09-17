@@ -17,19 +17,19 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/marlomajor/code/99ScalaProblems/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 55e7ee68, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 41f3ecee, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/classes:/Users/marlomajor/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/Users/marlomajor/code/99ScalaProblems/target/scala-2.11/classes[0m
-[0m[[0mdebug[0m] [0mScala compilation took 5.075744407 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 6.426607404 s[0m
 [0m[[0mdebug[0m] [0mInvalidating /Users/marlomajor/code/99ScalaProblems/src/main/scala/problems.scala...[0m
 [0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/marlomajor/code/99ScalaProblems/src/main/scala/problems.scala...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/marlomajor/code/99ScalaProblems/src/main/scala/problems.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/marlomajor/code/99ScalaProblems/src/main/scala/problems.scala)[0m
 [0m[[0mdebug[0m] [0mThe /Users/marlomajor/code/99ScalaProblems/src/main/scala/problems.scala source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m	reverse, secondToLast, length, last.[0m
+[0m[[0mdebug[0m] [0m	palindrome, nth.[0m
 [0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m

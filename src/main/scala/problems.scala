@@ -12,13 +12,14 @@ object Problem {
     case Nil           => throw new NoSuchElementException
   }
 
-  def kth[A](n:Int, ls:List[A]):A =
+  def kth[A](n:Int, ls:List[A]):A = {
     if (n>=0) ls(n) else throw new IllegalArgumentException
+  }
 
   def kthRecursion[A](n:Int, ls:List[A]):A = (n, ls) match {
-    case (0, h :: _)    => h
-    case (a, _ :: tail) => kthRecursion(a-1, tail)
-    case (a, Nil)       => throw new NoSuchElementException
+    case (0, h) => h.head
+    case (n, _::tail) => nth(n-1, tail)
+    case (_, Nil) => throw new NoSuchElementException
   }
 
   def lengthRecursion[A](ls:List[A], count:Int = 0):Int = (ls, count) match {
@@ -27,8 +28,7 @@ object Problem {
     case (Nil, a)     => throw new NoSuchElementException
   }
 
-  def lengthFunctional[A](ls:List[A]):Int =
-    ls.foldLeft(0)((c, _) => c + 1)
+  def lengthFunctional[A](ls:List[A]):Int = {ls.foldLeft(0)((c, _) => c + 1)}
 
   def reverseRecursion[A](ls: List[A]): List[A] = {
     def reverseR(result: List[A], curList: List[A]): List[A] = curList match {
@@ -42,7 +42,11 @@ object Problem {
     ls.foldLeft(List.empty[A])((acc,h) => h::acc)
   }
 
-  def palindrome(ls:List[_]):Boolean = ls.reverse == ls
+  def palindrome[A](l: List[A]):Boolean = l match {
+    case Nil => true
+    case List(a) => true
+    case list => (list.head == list.last && palindrome(list.tail.init))
+  }
 
   def flatten(ls:List[_]):List[Any] = ls flatMap {
     case m:List[_] => flatten(m)
@@ -56,6 +60,12 @@ object Problem {
     }
   }
 
-  // def pack[M](ls:List[M]):List[M] = ???
+  def nth[A](n:Int, ls:List[A]):A = (n, ls) match {
+    case (0, h) => h.head
+    case (n, _::tail) => nth(n-1, tail)
+    case (_, Nil) => throw new NoSuchElementException
+  }
+
+  def pack[M](ls:List[M]):List[M] = ???
 
 }
