@@ -1,7 +1,7 @@
 object Problem {
 
   def lastRecursion[A](ls:List[A]):A = ls match {
-    case h::Nil  => h
+    case cup :: Nil => cup
     case _::tail => lastRecursion(tail)
     case Nil     => throw new NoSuchElementException
   }

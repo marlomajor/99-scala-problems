@@ -10,3 +10,16 @@
 [0m[[0minfo[0m] [0m[32m- list is a palindrome[0m[0m
 [0m[[0minfo[0m] [0m[32m- flatten list[0m[0m
 [0m[[0minfo[0m] [0m[32m- eliminate consecutive duplicates of list elements[0m[0m
+[0m[[0minfo[0m] [0m[31m- Pack consecutive duplicates of list elements into sublists *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Problem$.pack(problems.scala:69)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$12.apply$mcV$sp(problems_test.scala:52)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$12.apply(problems_test.scala:51)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$12.apply(problems_test.scala:51)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
