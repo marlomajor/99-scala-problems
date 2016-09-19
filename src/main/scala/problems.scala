@@ -72,4 +72,8 @@ object Problem {
       val (group, nextList) = ls.span {_ == ls(0)}
       if (nextList == Nil) List(group) else group::pack(nextList)
     }
+
+  def encode[A](ls:List[A]):List[(Int, A)] =
+    pack(ls).map{x=>(x.size, x(0))}
+    
 }
