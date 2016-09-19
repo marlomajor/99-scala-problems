@@ -66,6 +66,10 @@ object Problem {
     case (_, Nil) => throw new NoSuchElementException
   }
 
-  def pack[M](ls:List[M]):List[M] = ???
-
+  def pack[A](ls:List[A]):List[List[A]] =
+    if (ls.isEmpty) List(List())
+    else {
+      val (packed, nextList) = ls.span {_ == ls(0)}
+      if (nextList == Nil) List(packed) else packed::pack(nextList)
+    }
 }
