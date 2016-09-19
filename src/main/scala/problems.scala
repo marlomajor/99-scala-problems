@@ -69,7 +69,7 @@ object Problem {
   def pack[A](ls:List[A]):List[List[A]] =
     if (ls.isEmpty) List(List())
     else {
-      val (packed, nextList) = ls.span {_ == ls(0)}
-      if (nextList == Nil) List(packed) else packed::pack(nextList)
+      val (group, nextList) = ls.span {_ == ls(0)}
+      if (nextList == Nil) List(group) else group::pack(nextList)
     }
 }
