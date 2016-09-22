@@ -75,5 +75,10 @@ object Problem {
 
   def encode[A](ls:List[A]):List[(Int, A)] =
     pack(ls).map{x=>(x.size, x(0))}
-    
+
+  def duplicate[A](ls:List[A]):List[A] =
+    ls.flatMap(x=>List(x, x))
+
+  
+
 }

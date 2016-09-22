@@ -248,21 +248,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#root-99scalaproblems_2.11;0.1-SNAPSHOT->org.scala-lang#scalap;2.11.7 [ensime-internal->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scalap;2.11.7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scalap;2.11.7 {ensime-internal=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scala-lang#scalap;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scalap;2.11.7 {ensime-internal=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/marlomajor/.ivy2/local/org.scala-lang/scalap/2.11.7/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scalap;2.11.7[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: found md file for org.scala-lang#scalap;2.11.7[0m
-[0m[[0mdebug[0m] [0m		=> https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.pom (2.11.7)[0m
-[0m[[0mdebug[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.pom ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scalap;2.11.7!scalap.pom(pom.original) (170ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/marlomajor/.ivy2/local/org.scala-lang/scalap/2.11.7/jars/scalap.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scalap;2.11.7 in jcenter[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scalap;2.11.7[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scalap;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#root-99scalaproblems_2.11;0.1-SNAPSHOT->org.scala-lang#scalap;2.11.7 [ensime-internal->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#root-99scalaproblems_2.11;0.1-SNAPSHOT->org.scala-lang#scalap;2.11.7 [ensime-internal->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#root-99scalaproblems_2.11;0.1-SNAPSHOT->org.scala-lang#scalap;2.11.7 [ensime-internal->master][0m
@@ -277,13 +264,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.jar ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.jar[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scalap/2.11.7/scalap-2.11.7.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scalap;2.11.7!scalap.jar (7154ms)[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1755ms :: artifacts dl 7169ms[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scalap;2.11.7!scalap.jar[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 116ms :: artifacts dl 5ms[0m
 [0m[[0mdebug[0m] [0m	report for default#root-99scalaproblems_2.11;0.1-SNAPSHOT compile produced in /Users/marlomajor/code/99ScalaProblems/target/resolution-cache/reports/default-root-99scalaproblems_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#root-99scalaproblems_2.11;0.1-SNAPSHOT runtime produced in /Users/marlomajor/code/99ScalaProblems/target/resolution-cache/reports/default-root-99scalaproblems_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#root-99scalaproblems_2.11;0.1-SNAPSHOT test produced in /Users/marlomajor/code/99ScalaProblems/target/resolution-cache/reports/default-root-99scalaproblems_2.11-test.xml[0m
@@ -298,5 +280,5 @@
 [0m[[0mdebug[0m] [0m	report for default#root-99scalaproblems_2.11;0.1-SNAPSHOT pom produced in /Users/marlomajor/code/99ScalaProblems/target/resolution-cache/reports/default-root-99scalaproblems_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#root-99scalaproblems_2.11;0.1-SNAPSHOT scala-tool produced in /Users/marlomajor/code/99ScalaProblems/target/resolution-cache/reports/default-root-99scalaproblems_2.11-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#root-99scalaproblems_2.11;0.1-SNAPSHOT ensime-internal produced in /Users/marlomajor/code/99ScalaProblems/target/resolution-cache/reports/default-root-99scalaproblems_2.11-ensime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1755ms resolve - 7169ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (116ms resolve - 5ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
