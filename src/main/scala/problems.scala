@@ -27,7 +27,8 @@ object Problem {
     case (Nil, a)     => throw new NoSuchElementException
   }
 
-  def lengthFunctional[A](ls:List[A]):Int = {ls.foldLeft(0)((c, _) => c + 1)}
+  def lengthFunctional[A](ls:List[A]):Int =
+    ls.foldLeft(0)((c, _) => c + 1)
 
   def reverseRecursion[A](ls: List[A]): List[A] = {
     def reverseR(result: List[A], curList: List[A]): List[A] = curList match {
@@ -37,9 +38,8 @@ object Problem {
     reverseR(Nil, ls)
   }
 
-  def reverseFunctional[A](ls:List[A]):List[A] = {
+  def reverseFunctional[A](ls:List[A]):List[A] =
     ls.foldLeft(List.empty[A])((acc,h) => h::acc)
-  }
 
   def palindrome[A](l: List[A]):Boolean = l match {
     case Nil => true
@@ -52,12 +52,11 @@ object Problem {
     case n         => List(n)
   }
 
-  def compress[M](ls:List[M]):List[M] = {
+  def compress[M](ls:List[M]):List[M] =
     ls.foldLeft(List.empty[M]){
       case (List(), y) => List(y)
       case (ls, y) => if (ls.last == y) ls else ls:::List(y)
     }
-  }
 
   def nth[A](n:Int, ls:List[A]):A = (n, ls) match {
     case (0, h) => h.head
@@ -78,10 +77,9 @@ object Problem {
   def duplicate[A](ls:List[A]):List[A] =
     ls flatMap (x=>List(x, x))
 
-  def duplicateN[A](n:Int, ls:List[A]):List[A] = {
+  def duplicateN[A](n:Int, ls:List[A]):List[A] =
     ls flatMap { e => List.fill(n)(e)}
-  }
 
   def drop[A](n: Int, ls: List[A]):List[A] = ???
-  
+
 }

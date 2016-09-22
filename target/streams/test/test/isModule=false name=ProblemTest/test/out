@@ -17,7 +17,7 @@
 [0m[[0minfo[0m] [0m[31m- drop every Nth element from list *** FAILED ***[0m[0m
 [0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at Problem$.drop(problems.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Problem$.drop(problems.scala:83)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$16.apply$mcV$sp(problems_test.scala:71)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$16.apply(problems_test.scala:70)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$16.apply(problems_test.scala:70)[0m[0m
