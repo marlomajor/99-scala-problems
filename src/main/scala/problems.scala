@@ -82,4 +82,6 @@ object Problem {
     ls flatMap { e => List.fill(n)(e)}
   }
 
+  def drop[A](n: Int, ls: List[A]):List[A] = ???
+  
 }

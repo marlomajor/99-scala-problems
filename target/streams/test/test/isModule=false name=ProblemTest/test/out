@@ -14,3 +14,16 @@
 [0m[[0minfo[0m] [0m[32m- Consecutive duplicates of elements are encoded as tuples (N, E)[0m[0m
 [0m[[0minfo[0m] [0m[32m- duplicate elements of list[0m[0m
 [0m[[0minfo[0m] [0m[32m- duplicate elements of list n times[0m[0m
+[0m[[0minfo[0m] [0m[31m- drop every Nth element from list *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at Problem$.drop(problems.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$16.apply$mcV$sp(problems_test.scala:71)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$16.apply(problems_test.scala:70)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ProblemTest$$anonfun$16.apply(problems_test.scala:70)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

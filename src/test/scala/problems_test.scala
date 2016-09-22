@@ -63,6 +63,12 @@ class ProblemTest extends FunSuite with Matchers {
   }
 
   test("duplicate elements of list n times") {
-    Problem.duplicateN(3, List('a, 'b, 'c, 'c, 'd)) should be (List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd, 'd))
+    Problem.duplicateN(3, List('a, 'b, 'c, 'c, 'd)) should be
+      (List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd, 'd))
+  }
+
+  test("drop every Nth element from list") {
+    Problem.drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be
+      (List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k))
   }
 }
