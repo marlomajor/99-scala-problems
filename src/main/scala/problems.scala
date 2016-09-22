@@ -12,9 +12,8 @@ object Problem {
     case Nil           => throw new NoSuchElementException
   }
 
-  def kth[A](n:Int, ls:List[A]):A = {
+  def kth[A](n:Int, ls:List[A]):A =
     if (n>=0) ls(n) else throw new IllegalArgumentException
-  }
 
   def kthRecursion[A](n:Int, ls:List[A]):A = (n, ls) match {
     case (0, h) => h.head
@@ -74,11 +73,13 @@ object Problem {
     }
 
   def encode[A](ls:List[A]):List[(Int, A)] =
-    pack(ls).map{x=>(x.size, x(0))}
+    pack(ls) map {x=>(x.size, x(0))}
 
   def duplicate[A](ls:List[A]):List[A] =
-    ls.flatMap(x=>List(x, x))
+    ls flatMap (x=>List(x, x))
 
-  
+  def duplicateN[A](n:Int, ls:List[A]):List[A] = {
+    ls flatMap { e => List.fill(n)(e)}
+  }
 
 }

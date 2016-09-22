@@ -1,5 +1,5 @@
 [0m[[0mdebug[0m] [0mThe Problem$ source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m	duplicate.[0m
+[0m[[0mdebug[0m] [0m	duplicateN.[0m
 [0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0mFiles invalidated by inheriting from (external) Problem$: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0mdebug[0m] [0mGetting direct dependencies of all sources transitively invalidated by inheritance.[0m
@@ -11,7 +11,7 @@
 [0m[[0mdebug[0m] [0m	added: Set()[0m
 [0m[[0mdebug[0m] [0m	modified: Set(/Users/marlomajor/code/99ScalaProblems/src/test/scala/problems_test.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated products: Set()[0m
-[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set(NamesChange(Problem$,ModifiedNames(regularNames = duplicate, implicitNames = )))[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set(NamesChange(Problem$,ModifiedNames(regularNames = duplicateN, implicitNames = )))[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
 [0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/marlomajor/code/99ScalaProblems/src/test/scala/problems_test.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
@@ -24,13 +24,13 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/marlomajor/code/99ScalaProblems/target/scala-2.11/test-classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 159702dd, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler d248719, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/classes:/Users/marlomajor/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/Users/marlomajor/code/99ScalaProblems/target/scala-2.11/test-classes:/Users/marlomajor/code/99ScalaProblems/target/scala-2.11/classes:/Users/marlomajor/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.5.jar:/Users/marlomajor/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.2.jar:/Users/marlomajor/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 2.570887397 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 2.301918951 s[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m

@@ -13,3 +13,4 @@
 [0m[[0minfo[0m] [0m[32m- Pack consecutive duplicates of list elements into sublists[0m[0m
 [0m[[0minfo[0m] [0m[32m- Consecutive duplicates of elements are encoded as tuples (N, E)[0m[0m
 [0m[[0minfo[0m] [0m[32m- duplicate elements of list[0m[0m
+[0m[[0minfo[0m] [0m[32m- duplicate elements of list n times[0m[0m
