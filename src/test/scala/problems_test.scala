@@ -71,4 +71,9 @@ class ProblemTest extends FunSuite with Matchers {
     Problem.drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be
       (List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k))
   }
+
+  test("split list into two parts") {
+    Problem.split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be
+      ((List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
+  }
 }

@@ -82,4 +82,6 @@ object Problem {
 
   def drop[A](n: Int, ls: List[A]):List[A] = ???
 
+  def split[A](n:Int, ls:List[A]):(List[A], List[A]) = ???
+
 }
