@@ -85,12 +85,10 @@ object Problem {
   def split[A](n:Int, ls:List[A]):(List[A], List[A]) =
     ls.splitAt(n)
 
-  def slice[A](a:Int, b:Int,ls:List[A]):List[A] = {
-    if (a >(ls.length-1) || b >(ls.length-1)) sys.error("int greater than list")
-    else ls match {
-      case Nil => sys.error("empty list")
-      case m => m.takeRight(b+1).take(a+1)
-    }
+  def slice[A](a:Int, b:Int,ls:List[A]):List[A] = ls match {
+    case Nil => sys.error("empty list")
+    case m => m.takeRight(b+1).take(a+1)
   }
+
 
 }
