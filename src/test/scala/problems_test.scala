@@ -76,4 +76,9 @@ class ProblemTest extends FunSuite with Matchers {
     Problem.split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be
       ((List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
   }
+
+  test("extract slice from list") {
+    Problem.slice(3, 7, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be
+      List('d, 'e, 'f, 'g)
+  }
 }

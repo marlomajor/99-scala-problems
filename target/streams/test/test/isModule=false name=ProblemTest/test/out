@@ -15,3 +15,4 @@
 [0m[[0minfo[0m] [0m[32m- duplicate elements of list[0m[0m
 [0m[[0minfo[0m] [0m[32m- duplicate elements of list n times[0m[0m
 [0m[[0minfo[0m] [0m[32m- split list into two parts[0m[0m
+[0m[[0minfo[0m] [0m[32m- extract slice from list[0m[0m
