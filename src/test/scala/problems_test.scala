@@ -88,5 +88,10 @@ class ProblemTest extends FunSuite with Matchers {
       (List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k, 'a, 'b, 'c))
   }
 
+  test("rotate list edge case") {
+    Problem.rotate(-2, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be
+      (List('j, 'k, 'a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i))
+  }
+
   
 }
