@@ -93,5 +93,8 @@ class ProblemTest extends FunSuite with Matchers {
       (List('j, 'k, 'a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i))
   }
 
-  
+  test("Remove the Kth element from a list") {
+    Problem.removeAt(1, List('a, 'b, 'c, 'd)) should be ((List('a, 'c, 'd),'b))
+  }
+
 }
