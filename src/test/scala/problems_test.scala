@@ -97,4 +97,8 @@ class ProblemTest extends FunSuite with Matchers {
     Problem.removeAt(1, List('a, 'b, 'c, 'd)) should be ((List('a, 'c, 'd),'b))
   }
 
+  test("Insert an element at a given position into a list") {
+    Problem.insertAt('new, 1, List('a, 'b, 'c, 'd)) should be (List('a, 'new, 'b, 'c, 'd))
+  }
+
 }
