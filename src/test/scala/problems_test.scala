@@ -59,7 +59,8 @@ class ProblemTest extends FunSuite with Matchers {
   }
 
   test("duplicate elements of list") {
-    Problem.duplicate(List('a, 'b, 'c, 'c, 'd)) should be (List('a, 'a, 'b, 'b, 'c, 'c, 'c, 'c, 'd, 'd))
+    Problem.duplicate(List('a, 'b, 'c, 'c, 'd)) should be
+      (List('a, 'a, 'b, 'b, 'c, 'c, 'c, 'c, 'd, 'd))
   }
 
   test("duplicate elements of list n times") {
@@ -81,4 +82,11 @@ class ProblemTest extends FunSuite with Matchers {
     Problem.slice(3, 7, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be
       List('d, 'e, 'f, 'g)
   }
+
+  test("rotate list") {
+    Problem.rotate(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be
+      (List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k, 'a, 'b, 'c))
+  }
+
+  
 }
