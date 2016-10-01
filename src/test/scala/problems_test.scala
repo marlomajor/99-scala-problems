@@ -101,4 +101,8 @@ class ProblemTest extends FunSuite with Matchers {
     Problem.insertAt('new, 1, List('a, 'b, 'c, 'd)) should be (List('a, 'new, 'b, 'c, 'd))
   }
 
+  test("Create a list containing all integers within a given range") {
+    Problem.range(4, 9) should be (List(4, 5, 6, 7, 8, 9))
+  }
+
 }
